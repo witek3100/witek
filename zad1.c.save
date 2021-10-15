@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main()
+{
+   int wynik;
+   int liczbaA;
+   int liczbaB;
+   printf("Podaj liczbe a: \n");
+   scanf("%d",&liczbaA);
+   printf("Podaj liczbe b: \n");
+   scanf("%d",&liczbaB);
+
+	liczbaA + liczbaB = wynik;
+
+printf("%d", wynik);
+  return 0;
+}
