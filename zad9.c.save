@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main(){
+
+int liczby[]={2, 3, 67, 45, 23};
+int i;
+for (i=0, i<5, i++);
+	printf("%d", liczby[i]);
+}

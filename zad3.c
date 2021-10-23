@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<math.h>
-
+#include<string.h>
 void main(void){
+
+
 float a;
 float b;
 float c;
@@ -20,12 +22,24 @@ float c;
 
 	delta = (b*b)-(4*a*c);
 	printf("delta wynosi: %f\n", delta);
+
 	float x1;
 	float x2;
-	float g=sqrt(delta);
+
 	if (delta < 0){printf("%s","funkcja nie ma miejsc zerowych \n");}
 
 	if (delta == 0){x1=-b/2*a; printf("miejsce zerowe funkcji: %lf\n", x1);}
 
-	if (delta > 0){x1=-b-g/4*a; x2=-b+g/4*a; printf("miejsca zerowe funkcji:\n %lf\n %lf\n", x1, x2);}
+	if (delta > 0){x1=-b-sqrt(delta)/4*a; x2=-b+sqrt(delta)/4*a; printf("miejsca zerowe funkcji:\n %lf\n %lf\n", x1, x2);}
+
+	float p=-b/2*a;
+	float q=-delta/4*a;
+
+	if (a>0){
+			 printf("minimum funkcji:\n %s %lf\n %s %lf\n","p =", p,"q = ", q);}
+		else
+			 {printf("maximum funkcji:\n %s %lf\n %s %lf\n","p =", p,"q = ", q);}
+
+	float g=2*a;
+	printf("pochodna funkcji:\n %lf %s %lf\n",g,"x+",b);
 }
